@@ -1,0 +1,69 @@
+name: storemithra
+description: A new Flutter project.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^0.1.3
+  
+  #Project Dependecies
+  #Dialog-Flow Integration
+  flutter_dialogflow: ^0.1.2
+
+  #For generating new sessions
+  uuid: 2.0.4
+
+  #For speech to text convertion
+  speech_to_text: ^2.1.0
+
+  #For Rest API calls
+  http: ^0.12.1
+
+  #For State Management
+  provider: ^4.1.2
+
+  #Firebase integration
+  #Database
+  # firebase_database: ^3.1.1
+  firebase_database: ^3.1.5
+  #Authentication
+  # firebase_auth: ^0.15.4
+  # firebase_auth: ^0.16.0
+
+  #SplashScreen integration
+  splashscreen: ^1.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  #Fonts for sanskrit heading
+  fonts:
+    - family: Samarkan
+      fonts:
+        - asset: assets/fonts/samarkan.TTF
+
+  #Dialogflow credentials file
+  assets:
+    # - assets/storemitra.json
+    - assets/storemitra-gtovui.json
+    - assets/storemitra-gtovui-0c1c50e4acf1.json
